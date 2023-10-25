@@ -1,0 +1,17 @@
+.container {
+    background-color: grey;
+    display: grid;
+    justify-content: center;
+}
+
+.board {
+    padding: 50px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+}
+
+.cell {
+    background-color: white;
+}
