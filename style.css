@@ -1,17 +1,50 @@
+* {
+    font-family: 'Wingdings', 'Webdings', sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form p {
+    font-weight: bold;
+}
+
 .container {
-    background-color: grey;
-    display: grid;
+    background-color: gainsboro;
+    display: flex;
+    gap: 100px;
     justify-content: center;
 }
 
+.menu {
+    margin: 50px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
 .board {
-    padding: 50px;
+    margin: 50px;
     display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(3, 100px);
-    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, 200px);
+    border: 5px solid transparent;
 }
 
 .cell {
     background-color: white;
+    border: none;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 72px;
 }
